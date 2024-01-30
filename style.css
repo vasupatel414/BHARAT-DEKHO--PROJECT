@@ -313,7 +313,7 @@ h3{
 .containerj{
     display: grid;
     padding-top: 5%;
-        gap: 40px;
+        gap: 90px;
         grid-template-columns: repeat(3, 1fr);
 }
 .middle img{
@@ -415,4 +415,8 @@ figure {
     background-color: transparent;
     z-index: -2;
     border: 0.5rem solid var(--supporting-color);
+}
+.section-common-subheading
+{
+    padding-top: 1%;
 }
