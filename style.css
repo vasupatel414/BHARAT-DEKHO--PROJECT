@@ -499,6 +499,7 @@ justify-content: center;
     color: var(--white-color);
       
 }
+
 .section-contact--homepage p{
     padding-top: 7%;
     padding-bottom: 9%;
@@ -598,4 +599,67 @@ textarea {
 input:focus-visible,
 textarea:focus-visible {
     outline: 0.1rem solid var(--bnt-hover-bg-color);
+}
+
+.section-blog {
+    background-color: var(--bg-color);
+
+    & .grid {
+        gap: 6.4rem;
+    }
+
+    & .blog {
+        box-shadow: var(--btn-box-shadow);
+        transition: scale 0.3s linear;
+
+        -webkit-transition: scale 0.3s linear;
+        -moz-transition: scale 0.3s linear;
+        -ms-transition: scale 0.3s linear;
+        -o-transition: scale 0.3s linear;
+
+        &:hover {
+            scale: 1.1;
+        }
+
+        & .blog-content {
+            padding: 1.4rem 2.4rem 2.4rem;
+        }
+    }
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+
+    & .blog-date {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.6rem;
+        font-size: 1.4rem;
+
+        & .fa-solid {
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+
+    & .section-common--title {
+        margin-top: 0.8rem;
+    }
+}
+.containerU
+{      margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5rem;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.containern{
+    padding-left: 2.5%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+}
+.blog h3{
+    font-size: medium;
 }
