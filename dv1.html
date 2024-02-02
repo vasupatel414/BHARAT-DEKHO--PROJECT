@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            row-gap: 15%;
+            padding-left: 5%;
+            padding-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <canvas id="myCan" height="100" width="200" style="background-color: aquamarine;"></canvas>
+    <script>
+        var c=document.getElementById("myCan");
+        var ctx=c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+    </script>
+    <canvas id="myCan2" height="100" width="200" style="background-color: aquamarine;"></canvas>
+    <script>
+        var c = document.getElementById("myCan2");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2 * Math.PI);
+        ctx.stroke();
+    </script>
+   
+    <canvas id="myCanvas" width="200" height="100" style="background-color: aquamarine; border:1px solid #000000;">
+    </canvas>
+    <canvas id="myCanvas" width="200" height="200" style="background-color: aquamarine; border:1px solid #000000;">
+    </canvas>
+    <canvas id="myCan3" height="100" width="300" style="background-color: aquamarine;"></canvas>
+    <script>
+        var c = document.getElementById("myCan3");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Jay Shree Ram", 10, 50);
+    </script>
+</div>
+</body>
+</html>
