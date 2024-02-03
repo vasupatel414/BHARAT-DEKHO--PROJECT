@@ -698,11 +698,14 @@ textarea:focus-visible {
         font-size: 54%;
         /* 1rem = 9px  */
     }
+        /* :is(.section-contact) .containers {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+        } */
 
     :is(.about-section,
         .section-blog,
         .tour-section,
-        .section-contact--homepage,
+        .section-contact,
         .why-choose-section)
   
         .containerx , .containery ,.containerb,.containerj ,.grid,.containerp,.containerU,.containers{
@@ -710,15 +713,25 @@ textarea:focus-visible {
     }
 }
 @media (width <=1100px) {
+    .section-contact {
+        padding-right: 0;
+    }
+        .section-contact .contact-map iframe{
+        width: 90%;
+        padding-right: 0;
+    }
     :is(.tour-section) .containerz {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
          :is(.section-blog) .containerU {
              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
          }
+                  /* :is(.section-contact) .containers {
+                      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+                  } */
 
     .why-choose-section {
-        & .left {
+        /* & .left {
             order: 2;
         }
 
@@ -727,7 +740,7 @@ textarea:focus-visible {
         }
 
         & .middle {
-            order: 1;
+            order: 1; */
 
             & figure::before {
                 width: 0;
@@ -744,7 +757,7 @@ textarea:focus-visible {
             }
         }
     }
-}
+
 @media (width <=998px) {
     .section-hero {
         height: auto;
@@ -755,15 +768,24 @@ textarea:focus-visible {
             gap: 0px;
 
             & .section-hero--content {
+                padding:auto;
+                padding-top: 5%;
+                padding-right: 15%;
                 order: 2;
             }
 
             & .section-hero--image {
                 order: 1;
-                padding-bottom: -15rem;
+                padding-top: 5%;
+                    /* width: 70%; */
+                    width: auto;
+                    height: auto;
+                    padding:auto;
+                    /* padding-bottom: 20%; */
 
                 & img {
-                    width: 100%;
+                    padding: 0;
+                    width: auto;
                 }
             }
         }
