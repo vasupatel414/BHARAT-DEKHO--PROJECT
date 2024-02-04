@@ -687,6 +687,9 @@ textarea:focus-visible {
         font-size: 56.25%;
         
     }
+    .section-hero{
+        padding-bottom: 15rem;
+    }
 
     .section-hero img {
         width: 90%;
@@ -698,6 +701,10 @@ textarea:focus-visible {
         font-size: 54%;
         /* 1rem = 9px  */
     }
+         .section-contact .contact-map iframe {
+             width: 95%;
+             padding-right: 0;
+         }
         /* :is(.section-contact) .containers {
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
         } */
@@ -717,7 +724,7 @@ textarea:focus-visible {
         padding-right: 0;
     }
         .section-contact .contact-map iframe{
-        width: 90%;
+        width: 95%;
         padding-right: 0;
     }
     :is(.tour-section) .containerz {
@@ -761,7 +768,7 @@ textarea:focus-visible {
 @media (width <=998px) {
     .section-hero {
         height: auto;
-        padding-bottom: 15rem;
+        
 
         & .containerx{
             grid-template-columns: 1fr;
@@ -800,6 +807,16 @@ textarea:focus-visible {
                   .about-section .group {
                       text-align: left;
                   }
+.contact-title {
+    font-size: 2.9rem;
+}
 
+.section-contact  {
+gap: 0;
+   
+}
+.contact-image{
+    width: 100%;
+}
    
 }
