@@ -4,6 +4,7 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 font-family: 'Urbanist', sans-serif;
+
 }
 :root {
     --main-color: #0062ff;
@@ -21,7 +22,7 @@ font-family: 'Urbanist', sans-serif;
 }
 html
 {
-font-size: 62.5%;
+font-size: 62.5%;scroll-behavior: smooth;
 }
 p,
 li,
@@ -321,6 +322,7 @@ h3{
         gap: 90px;
         grid-template-columns: repeat(3, 1fr);
 }
+
 .middle img{
     padding-top: 20%;
     width: 100%;
@@ -542,7 +544,7 @@ footer {
         background-color: var(--bnt-hover-bg-color);
         rotate: 360deg;
 }
-.containerl{
+.containerh{
     padding-left: 10%;
     padding-top: 3%;
     padding-bottom: 5%;
@@ -681,6 +683,14 @@ textarea:focus-visible {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--heading-color);
 }
+.containerl{
+    padding-left: 0%;
+}
+.containerh
+{
+    padding-top: 5%;
+padding-left: 10%;
+}
 
 @media (width <=1400px) {
     html {
@@ -718,6 +728,9 @@ textarea:focus-visible {
         .containerx , .containery ,.containerb,.containerj ,.grid,.containerp,.containerU,.containers{
         gap: 6.4rem;
     }
+         .contact-title {
+             font-size: 2.85rem;
+         }
 }
 @media (width <=1100px) {
     .section-contact {
@@ -763,9 +776,11 @@ textarea:focus-visible {
                 padding: 0;
             }
         }
+               
     }
 
 @media (width <=998px) {
+
     .section-hero {
         height: auto;
         
@@ -807,9 +822,7 @@ textarea:focus-visible {
                   .about-section .group {
                       text-align: left;
                   }
-.contact-title {
-    font-size: 2.9rem;
-}
+
 
 .section-contact  {
 gap: 0;
@@ -818,5 +831,58 @@ gap: 0;
 .contact-image{
     width: 100%;
 }
-   
+
+}
+@media (width <=768px) {
+
+    .grid-two--cols,
+    .grid-three--cols {
+        grid-template-columns: 1fr;
+    }
+
+    .section-navbar .container {
+        display: flex;
+        flex-direction: column;
+
+        & .navbar ul {
+            gap: 2.4rem;
+        }
+
+        & .navbar-brand {
+            text-align: center;
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    .section-hero .grid .hero-heading {
+        font-size: 3.8rem;
+    }
+
+    .section-why--choose {
+        & img {
+            width: 30%;
+        }
+
+        & .grid {
+            gap: 1.4rem;
+        }
+
+        & .text-align--right .why-choose--div {
+            align-items: start;
+            text-align: left;
+        }
+    }
+
+    .section-contact--homepage .btn {
+        display: block;
+        text-align: center;
+    }
+
+    .contact-title {
+        font-size: 2.4rem;
+    }
+
+    :is(.section-contact--homepage) .container:first-child {
+        padding: 6.4rem 0rem 2.4rem 0rem;
+    }
 }
