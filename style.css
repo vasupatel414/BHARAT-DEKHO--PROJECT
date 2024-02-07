@@ -410,8 +410,7 @@ figure {
     -o-transform: translate(-50%, -50%);
     background-color: var(--main-color);
     width: 45rem;
-    /*aspect-ratio: 1;
-  */
+    
     height: 45rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
