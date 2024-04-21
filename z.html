@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee List</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Add Employee</h2>
+    <form action="EmployeeServlet" method="post">
+        <label for="name">User Name:</label>
+        <input type="text" id="name" name="name" value="Vasu" required><br><br>
+       
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Hello vasu!!</h2>
+    
+</body>
+
+</html>
