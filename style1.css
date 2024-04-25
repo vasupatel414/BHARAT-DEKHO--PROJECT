@@ -1,0 +1,41 @@
+body{
+    padding: 50px;
+}
+
+h2{
+    margin-bottom: -15px;
+}
+
+.comp{
+    margin-left: 80px;
+}
+
+.head{
+    display: flex;
+}
+
+.name{
+    padding-top: 5%;
+    padding-left: 700px;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+}
+.left{
+    width: 50%;
+    margin-right: 15px;
+}
+.right{
+    margin-left: 50px;
+}
+
+img{
+    height: 173px;
+    width: 160px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15%;
+}
