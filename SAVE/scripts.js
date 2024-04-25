@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 1, name: 'TV', price: 500, location: 'New York', photo: 'TV.webp' },
         { id: 2, name: 'Mobile Phone', price: 300, location: 'Los Angeles', photo: 'goa.jpg' }
     ];
-
     // Function to display products
     function displayProducts() {
         productList.innerHTML = '';
